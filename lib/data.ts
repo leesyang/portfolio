@@ -1,7 +1,7 @@
 // Single source of truth for all page content.
 // Edit here to update projects, stack, or links — the UI maps over these.
 
-const IMG = "https://leeyang.netlify.app/assets/images";
+const IMG = "/images";
 
 export type Project = {
   name: string;
