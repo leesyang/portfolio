@@ -1,0 +1,46 @@
+.hero {
+  padding-top: clamp(4rem, 12vh, 8rem);
+  padding-bottom: clamp(3.5rem, 9vh, 6rem);
+}
+
+.eyebrow {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.6rem, 8vw, 5.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  max-width: 14ch;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.lede {
+  margin-top: 1.75rem;
+  max-width: 52ch;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  color: var(--muted);
+}
+
+.stack {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+}
+
+.chip {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--paper-2) 60%, transparent);
+}

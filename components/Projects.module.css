@@ -1,0 +1,139 @@
+.section {
+  padding-block: clamp(3rem, 8vh, 5.5rem);
+  border-top: 1px solid var(--line);
+}
+
+.head {
+  margin-bottom: clamp(2rem, 5vh, 3.5rem);
+}
+
+.heading {
+  margin-top: 0.9rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  letter-spacing: -0.02em;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.5rem, 6vh, 4.5rem);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+/* Alternate image side for an editorial zig-zag. */
+.card:nth-child(even) .media {
+  order: 2;
+}
+
+.media {
+  position: relative;
+  aspect-ratio: 16 / 11;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.img {
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card:hover .img {
+  transform: scale(1.035);
+}
+
+.index {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+  letter-spacing: -0.02em;
+}
+
+.blurb {
+  margin-top: 0.7rem;
+  color: var(--ink);
+  max-width: 44ch;
+}
+
+.note {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  max-width: 44ch;
+}
+
+.tags {
+  margin-top: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  list-style: none;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+.tag::before {
+  content: "#";
+  color: var(--line);
+}
+
+.links {
+  margin-top: 1.4rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.link {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35ch;
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid var(--ink);
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+.link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.arrow {
+  font-size: 0.9em;
+  transition: transform 0.18s ease;
+}
+.link:hover .arrow {
+  transform: translate(1px, -1px);
+}
+
+@media (max-width: 760px) {
+  .card {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .card:nth-child(even) .media {
+    order: 0;
+  }
+}
