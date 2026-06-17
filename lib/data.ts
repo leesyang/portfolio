@@ -66,7 +66,7 @@ export const projects: Project[] = [
       "AWS S3",
     ],
     links: [
-      { label: "Demo", href: "https://doneperiodapp.herokuapp.com/" },
+      { label: "Demo", href: "https://doneperiod-client.onrender.com" },
       { label: "Code", href: "https://github.com/leesyang/donePeriod-client" },
       {
         label: "Info",
@@ -84,6 +84,5 @@ export const resumeUrl =
 export const socials = [
   { label: "Email", href: "mailto:leesyang@gmail.com" },
   { label: "GitHub", href: "https://github.com/leesyang" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/leeyanglinked/" },
-  { label: "Twitter", href: "https://twitter.com/LeeSYang2" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/leeyanglinked/" }
 ];

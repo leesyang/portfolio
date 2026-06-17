@@ -29,23 +29,22 @@ export default function About() {
               <span className={styles.ln} data-ln="3" />
               <span className={styles.text}>
                 Experienced web developer with a passion for building great
-                applications with clean, re-usable code. I work across back-end
-                and front-end, and I love taking a project from start to finish.
+                applications with modern tooling including AI assisted development. Life is more
+                than just coding however.
               </span>
               {"\n"}
               <span className={styles.ln} data-ln="4" />
               {"\n"}
               <span className={styles.ln} data-ln="5" />
               <span className={styles.text}>
-                There&apos;s something beautiful about code that isn&apos;t just
-                functional, but DRY, efficient, and well-formatted.
+                Faith, family and friends fuel me. Besides that there is coffee.
               </span>
               {"\n"}
               <span className={styles.ln} data-ln="6" />
               {"\n"}
               <span className={styles.ln} data-ln="7" />
               <span className={styles.comment}>
-                {"// currently fueled by Journey Coffee, Vacaville CA"}
+                {"// currently hooked on James Coffee (SD), Highwire (Oakland) and Anchor & Tree (Sacramento)"}
               </span>
               {"\n"}
               <span className={styles.ln} data-ln="8" />
